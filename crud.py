@@ -42,10 +42,11 @@ def view_employees():
 
     print("\nEMPLOYEE TABLE:")
     row = ibm_db.fetch_assoc(stmt)
+    print('hola amigo')
     while row:
         print(row)
         row = ibm_db.fetch_assoc(stmt)
-
+    
     ibm_db.close(conn)
 
 # ---------------- UPDATE ----------------
